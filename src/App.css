@@ -243,3 +243,43 @@
     transform: rotate(1deg);
   }
 }
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.moveDown {
+  transition: transform 750ms;
+  will-change: transform;
+}
+.moveDown:hover {
+  transform: translateY(5px);
+}
+
+.moveUp {
+  transition: transform 750ms;
+  will-change: transform;
+}
+.moveUp:hover {
+  transform: translateY(-5px);
+}
+.moveLeft {
+  transition: transform 750ms;
+  will-change: transform;
+}
+.moveLeft:hover {
+  transform: translateX(-5px);
+}
+
+.osw {
+  background-image: url("./Images/laptop.jpeg");
+  background-size: 1050px;
+}
