@@ -1,38 +1,245 @@
 .App {
+  position: relative;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.Background {
+  background-image: url("./Images/bedroom2.jpeg");
+  height: 1000px;
+  width: 1000px;
+  background-size: 1000px, 1000px;
+}
+
+.Objects {
+  cursor: pointer;
+  /* animation: wiggle 2s infinite; */
+}
+
+.Objects:hover {
+  outline: 3px dotted yellow;
+  outline-offset: 3px;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  5% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  10% {
+    transform: translate(-1px, 1px) rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Question {
+  cursor: pointer;
+  width: 2rem;
+}
+.Question:hover {
+  background-color: #f1d7d8;
+  border-radius: 3rem;
+}
+
+.text {
+  text-decoration: none;
+  color: #679a99;
+}
+.text:hover {
+  color: #f1d7d8;
+}
+.menuItems {
+  margin: 0.5rem;
+  font-size: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Back {
+  cursor: pointer;
+  width: 2rem;
+}
+.Back:hover {
+  background-color: #f1d7d8;
+  border-radius: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.wrap {
+  position: relative;
+  left: 100px;
+}
+@keyframes dodging1 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.wrap2 {
+  position: absolute;
+  left: 30%;
+  margin-top: -100px;
+  animation: dodging1 1s ease-in-out infinite;
+}
+/* THE BEE   THE BEE   THE BEE   THE BEE    */
+/* BODY BODY BODY BODY  */
+.body {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  height: 85px;
+  width: 75px;
+  border-radius: 100%;
+  z-index: 1;
+  background-color: #f7d391;
+  box-shadow: 20px 0 0 #000, 40px -3px 0 #f7d391, 60px -7px 0 #000,
+    80px -11px 0 #f7d391;
+}
+/* BODY BODY BODY BODY  */
+/* WINGS WINGS WINGS WINGS */
+@keyframes flutter2 {
+  0% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+}
+@keyframes flutter1 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}
+.wing1 {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  top: 210px;
+  left: 280px;
+  transform: rotate(20deg);
+  transform-origin: bottom right;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 10px;
+  background-color: white;
+  z-index: 1;
+  filter: blur(1px);
+  animation: flutter1 0.08s linear reverse infinite;
+}
+.wing2 {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  top: 205px;
+  left: 290px;
+  transform: rotate(80deg);
+  transform-origin: bottom right;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 10px;
+  background-color: white;
+  z-index: 2;
+  filter: blur(1px);
+  animation: flutter2 0.08s linear infinite;
+}
+
+.stinger {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  top: 255px;
+  left: 355px;
+  transform: rotate(320deg);
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 10px;
+  background-color: #000;
+  z-index: 0;
+}
+
+.eyes {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 260px;
+  left: 250px;
+  background-color: white;
+  box-shadow: 20px 0 0 white;
+  border-radius: 100%;
+  z-index: 2;
+}
+.pupil {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 10px;
+  left: 2px;
+  background-color: #000;
+  border-radius: 100%;
+  box-shadow: 20px 0 0 #000;
+  z-index: 3;
+}
+
+.cloud2 {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 150px;
+  left: 400px;
+  border-radius: 100%;
+  box-shadow: 100px 200px 2px rgba(255, 255, 255, 0.95),
+    50px 205px 1px rgba(255, 255, 255, 0.95),
+    10px 200px 1px rgba(255, 255, 255, 0.95),
+    35px 170px 1px rgba(255, 255, 255, 0.95),
+    70px 170px 1px rgba(255, 255, 255, 0.95);
+  animation: cloud 5s 2s linear infinite;
+  z-index: 3;
+}
+.cloud3 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: 150px 200px 2px rgba(255, 255, 255, 0.95),
+    75px 205px 1px rgba(255, 255, 255, 0.95),
+    10px 200px 1px rgba(255, 255, 255, 0.95),
+    45px 150px 1px rgba(255, 255, 255, 0.95),
+    120px 150px 1px rgba(255, 255, 255, 0.95);
+  animation: cloud2 2s 1s linear infinite;
+  z-index: 3;
+}
+
+@keyframes cloud {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(5deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes cloud2 {
+  0% {
+    transform: rotate(1deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(1deg);
   }
 }
