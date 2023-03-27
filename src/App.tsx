@@ -38,6 +38,7 @@ function App() {
           <a href="#AboutMe" style={{ zIndex: 5 }}>
             <img
               src={portrait}
+              className="plz"
               style={{
                 position: "absolute",
                 transform: "translate(100px, 296px)",
@@ -51,6 +52,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#sw">
             <img
+              className="plz"
               src={laptop}
               style={{
                 position: "absolute",
@@ -64,6 +66,7 @@ function App() {
         <div {...props} className="Objects" style={{ zIndex: 100 }}>
           <a href="#hawaii">
             <img
+              className="plz"
               src={spam}
               style={{
                 position: "absolute",
@@ -77,6 +80,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#pub">
             <img
+              className="plz"
               src={book}
               style={{
                 position: "absolute",
@@ -90,6 +94,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#science">
             <img
+              className="plz"
               src={science}
               style={{
                 position: "absolute",
@@ -103,6 +108,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#education">
             <img
+              className="plz"
               src={cert}
               style={{
                 position: "absolute",
@@ -116,6 +122,7 @@ function App() {
         <div className="Objects" onClick={() => console.log("download resume")}>
           <img
             src={resume}
+            className="plz"
             style={{
               position: "absolute",
               transform: "translate(310px, 536px) rotate(2deg)",
@@ -127,6 +134,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#bee">
             <img
+              className="plz"
               src={bee}
               style={{
                 position: "absolute",

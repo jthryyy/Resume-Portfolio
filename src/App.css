@@ -17,11 +17,10 @@
   animation: wiggle 2s infinite;
 }
 
-.Objects:hover {
+.plz:hover {
   outline: 3px dotted #f7d391;
   outline-offset: 3px;
 }
-
 @keyframes wiggle {
   0% {
     transform: translate(1px, 1px);
