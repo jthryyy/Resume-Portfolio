@@ -11,11 +11,12 @@ export const Cert = (): JSX.Element => {
         flexDirection: "column",
         backgroundColor: "#f7d391",
         height: "24rem",
-        margin: "1.5rem 2.5rem 1.5rem 1.5rem",
+        margin: "2.5rem 2.5rem 0.5rem 1.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-        fontSize: "1.6rem",
+        fontSize: "1.2rem",
         color: "black",
+        width: "21rem",
       }}
     >
       <div
@@ -108,12 +109,13 @@ export const Cert = (): JSX.Element => {
         <div
           className="moveUp"
           style={{
-            padding: "2rem",
+            padding: "1.5rem",
             fontSize: "1.2rem",
             color: "black",
             textAlign: "center",
             backgroundColor: "#F2D8D9",
             borderRadius: "3rem",
+            margin: "1rem",
             border: "2px solid black",
           }}
         >

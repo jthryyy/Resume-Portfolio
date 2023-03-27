@@ -4,7 +4,6 @@
   border-radius: 0 0 30px 30px;
   height: 200px;
   left: 14px;
-  bottom: 1px;
   width: 60px;
   position: relative;
 }
@@ -13,8 +12,17 @@
   background-color: #3f2c62;
   border: 10px solid #3f2c62;
   border-radius: 0 0 20px 20px;
-  bottom: 0rem;
+  bottom: 0px;
+  animation: liqHeight 3s 1 forwards;
   height: 150px;
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+}
+
+#liquidEmpty {
+  border-radius: 0 0 20px 20px;
+  bottom: 0rem;
   position: absolute;
   overflow: hidden;
   width: 40px;
@@ -37,8 +45,8 @@
   border-top: 0;
   border-radius: 0 0 30px 30px;
   height: 200px;
-  left: -120px;
-
+  left: -94px;
+  bottom: 210px;
   width: 60px;
   position: relative;
 }
@@ -47,8 +55,22 @@
   background-color: #eca690;
   border: 10px solid #eca690;
   border-radius: 0 0 20px 20px;
+  bottom: 0px;
+  animation: liqHeight 3s 1 forwards;
   bottom: 0rem;
   height: 150px;
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+}
+
+#liquid2Empty {
+  background-color: #eca690;
+  border: 10px solid #eca690;
+  border-radius: 0 0 20px 20px;
+  bottom: 0px;
+  bottom: 0rem;
+  height: 10px;
   position: absolute;
   overflow: hidden;
   width: 40px;
@@ -71,16 +93,30 @@
   border-top: 0;
   border-radius: 0 0 30px 30px;
   height: 200px;
-  left: 100px;
+  left: 120px;
   width: 60px;
-  top: -13.1rem;
+  bottom: 26.2rem;
   position: relative;
+}
+
+#liquid3 {
+  background-color: #eca690;
+  border: 10px solid #eca690;
+  border-radius: 0 0 20px 20px;
+  bottom: 0px;
+  bottom: 0rem;
+  height: 10px;
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
 }
 
 #liquid3 {
   background-color: #a0ccaa;
   border: 10px solid #a0ccaa;
   border-radius: 0 0 20px 20px;
+  bottom: 0px;
+  animation: liqHeight 3s 1 forwards;
   bottom: 0rem;
   height: 150px;
   position: absolute;
@@ -150,4 +186,13 @@
   left: 20px;
   animation-delay: 1000ms;
   animation-duration: 600ms;
+}
+
+@keyframes liqHeight {
+  0% {
+    height: 10px;
+  }
+  100% {
+    height: 150px;
+  }
 }

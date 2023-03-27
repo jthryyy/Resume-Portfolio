@@ -18,7 +18,7 @@
 }
 
 .Objects:hover {
-  outline: 3px dotted yellow;
+  outline: 3px dotted #f7d391;
   outline-offset: 3px;
 }
 
@@ -26,14 +26,35 @@
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
-  5% {
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
     transform: translate(1px, -1px) rotate(1deg);
   }
-  10% {
-    transform: translate(-1px, 1px) rotate(1deg);
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
@@ -68,9 +89,17 @@
   border-radius: 3rem;
 }
 
+.BackAlt {
+  cursor: pointer;
+  width: 2rem;
+}
+.BackAlt:hover {
+  background-color: lightgray;
+  border-radius: 3rem;
+}
+
 .wrap {
   position: relative;
-  left: 100px;
 }
 @keyframes dodging1 {
   0% {
@@ -85,12 +114,10 @@
 }
 .wrap2 {
   position: absolute;
-  left: 30%;
+  left: 43%;
   margin-top: -100px;
   animation: dodging1 1s ease-in-out infinite;
 }
-/* THE BEE   THE BEE   THE BEE   THE BEE    */
-/* BODY BODY BODY BODY  */
 .body {
   position: absolute;
   top: 250px;
@@ -103,8 +130,6 @@
   box-shadow: 20px 0 0 #000, 40px -3px 0 #f7d391, 60px -7px 0 #000,
     80px -11px 0 #f7d391;
 }
-/* BODY BODY BODY BODY  */
-/* WINGS WINGS WINGS WINGS */
 @keyframes flutter2 {
   0% {
     transform: rotate(80deg);
@@ -282,4 +307,53 @@
 .osw {
   background-image: url("./Images/laptop.jpeg");
   background-size: 1050px;
+}
+
+.typewriter {
+  height: 2rem;
+  overflow: hidden;
+  border-right: 2px solid #f7d391;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  animation: typing 0.8s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f7d391;
+  }
+}
+
+.socialMed:hover {
+  background-color: #f1d7d8;
+  border-radius: 1rem;
+}
+
+.thought {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 40px;
+  max-width: 220px;
+  min-height: 40px;
+  margin: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: wiggle 2s ease-in-out;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }

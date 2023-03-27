@@ -17,12 +17,13 @@ export const OpentronsS = (props: Generic): JSX.Element => {
       className="moveUp"
       style={{
         backgroundColor: "#f1d7d8",
-        height: "38rem",
+        height: "28rem",
         margin: "2.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-        fontSize: "1.6rem",
+        fontSize: "1.2rem",
         color: "black",
+        width: "65rem",
       }}
     >
       <div
@@ -37,7 +38,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
         }}
       >
         <div className="moveLeft" style={{ marginTop: "2px" }}>
-          <Back onClick={props.onClick} />
+          <Back onClick={props.onClick} difHover />
         </div>
         <div
           style={{
@@ -53,7 +54,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
             className="moveDown"
             style={{
               flexDirection: "row",
-              width: "20rem",
+              width: "16rem",
               display: "flex",
               backgroundColor: "lightgray",
               padding: "0.5rem",
@@ -84,47 +85,57 @@ export const OpentronsS = (props: Generic): JSX.Element => {
             </li>
           </ul>
         </div>
-      </div>
-      <div
-        className="moveDown container reveal"
-        style={{
-          fontSize: "1.2rem",
-          top: "7rem",
-          right: "10rem",
-          position: "absolute",
-          zIndex: 5,
-        }}
-      >
-        Click to fill up the beakers!
-      </div>
-      <div
-        className="container reveal"
-        style={{
-          width: "100%",
-          height: "100%",
-          zIndex: 100,
-          position: "absolute",
-          right: "-45rem",
-          top: "10rem",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <div id="beaker" className="moveUp">
-          <div id="liquid">
-            <div className="bubble bubble1"></div>
-            <div className="bubble bubble2"></div>
+        <div style={{ flexDirection: "column", marginTop: "3rem" }}>
+          <div
+            className="container reveal"
+            style={{
+              fontSize: "1.2rem",
+              zIndex: 5,
+            }}
+          >
+            Click to fill up the beakers!
           </div>
-          <div id="beaker2" className="moveUp">
-            <div id="liquid2">
-              <div className="bubble bubble3"></div>
-              <div className="bubble bubble4"></div>
+          <div
+            className="container reveal"
+            style={{
+              zIndex: 100,
+              flexDirection: "column",
+              marginLeft: "4rem",
+              marginTop: "1rem",
+            }}
+          >
+            <div
+              id="beaker"
+              className="moveUp"
+              onClick={() => setFill(true)}
+              style={{ cursor: fill ? "default" : "pointer" }}
+            >
+              <div id={fill ? "liquid" : "liquidEmpty"}>
+                <div className="bubble bubble1"></div>
+                <div className="bubble bubble2"></div>
+              </div>
             </div>
-          </div>
-          <div id="beaker3" className="moveUp">
-            <div id="liquid3">
-              <div className="bubble bubble5"></div>
-              <div className="bubble bubble6"></div>
+            <div
+              id="beaker2"
+              className="moveUp"
+              onClick={() => setFill2(true)}
+              style={{ cursor: fill2 ? "default" : "pointer" }}
+            >
+              <div id={fill2 ? "liquid2" : "liquidEmpty2"}>
+                <div className="bubble bubble3"></div>
+                <div className="bubble bubble4"></div>
+              </div>
+            </div>
+            <div
+              id="beaker3"
+              className="moveUp"
+              onClick={() => setFill3(true)}
+              style={{ cursor: fill3 ? "default" : "pointer" }}
+            >
+              <div id={fill3 ? "liquid3" : "liquidEmpty3"}>
+                <div className="bubble bubble5"></div>
+                <div className="bubble bubble6"></div>
+              </div>
             </div>
           </div>
         </div>

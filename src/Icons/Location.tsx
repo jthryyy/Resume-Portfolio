@@ -1,5 +1,3 @@
-import "../App.css";
-
 export const Location = (): JSX.Element => {
   return (
     <div style={{ width: "1.5rem", height: "1.5rem" }}>

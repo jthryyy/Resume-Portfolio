@@ -13,7 +13,7 @@ export const Publication = (props: Generic): JSX.Element => {
       style={{
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "#A99CC5",
+        backgroundColor: "#EFAA94",
         height: "34rem",
         margin: "1.5rem 2.5rem",
         borderRadius: "3rem",

@@ -61,9 +61,10 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
         margin: "1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-        fontSize: "1.6rem",
+        fontSize: "1.2rem",
         color: "black",
         height: "30rem",
+        width: "65rem",
       }}
     >
       <div
@@ -84,7 +85,7 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
           className="moveDown"
           style={{
             flexDirection: "row",
-            width: "20rem",
+            width: "16rem",
             display: "flex",
             backgroundColor: "lightgray",
             padding: "0.5rem",
@@ -92,8 +93,8 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
             color: "black",
             transform: "rotate(270deg)",
             position: "absolute",
-            top: "13rem",
-            left: "-7.8rem",
+            top: "11.5rem",
+            left: "-5.8rem",
           }}
         >
           <Location />

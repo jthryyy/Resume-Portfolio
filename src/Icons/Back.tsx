@@ -3,13 +3,14 @@ import type { StyleProps } from "../Utils/types";
 
 interface Back extends StyleProps {
   onClick: () => void;
+  difHover?: boolean;
 }
 
 export const Back = (props: Back): JSX.Element => {
   return (
     <div
       onClick={props.onClick}
-      className="Back"
+      className={props.difHover ? "BackAlt" : "Back"}
       style={{ width: "1.5rem", height: "1.5rem" }}
     >
       <svg
@@ -19,12 +20,11 @@ export const Back = (props: Back): JSX.Element => {
         viewBox="0 0 24 24"
         fill="none"
         stroke="black"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
-        <polygon points="11 19 2 12 11 5 11 19"></polygon>
-        <polygon points="22 19 13 12 22 5 22 19"></polygon>
+        <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5" />
       </svg>
     </div>
   );

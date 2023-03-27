@@ -12,12 +12,13 @@ export const Bee = (props: Generic): JSX.Element => {
       style={{
         flexDirection: "column",
         backgroundColor: "#6C97C4",
-        height: "35rem",
+        height: "28rem",
         margin: "1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-        fontSize: "1.6rem",
+        fontSize: "1.2rem",
         color: "black",
+        width: "65rem",
       }}
     >
       <div
@@ -45,7 +46,7 @@ export const Bee = (props: Generic): JSX.Element => {
             className="moveDown"
             style={{
               flexDirection: "row",
-              width: "18rem",
+              width: "15rem",
               display: "flex",
               backgroundColor: "lightgray",
               padding: "0.5rem",
@@ -64,7 +65,7 @@ export const Bee = (props: Generic): JSX.Element => {
             October 2018 - October 2019
           </div>
           <ul style={{ width: "50%", overflow: "scroll" }} className="moveDown">
-            <li>
+            <li style={{ marginBottom: "1rem" }}>
               Troubleshooted and analyzed molecular protocols (i.e. mRNA
               extraction, Tag-seq, single cell-seq) adding over a thousand
               unique bee sequences to the lab's genetic library
