@@ -34,10 +34,9 @@ function App() {
         >
           <Question onClick={() => setMenu(menu ? false : true)} />
         </div>
-        <div {...props}>
+        <div {...props} className="Objects">
           <a href="#AboutMe" style={{ zIndex: 5 }}>
             <img
-              className="Objects"
               src={portrait}
               style={{
                 position: "absolute",
@@ -48,98 +47,92 @@ function App() {
             />
           </a>
         </div>
-        <div {...props}>
-          <a href="#hawaii">
-            <img
-              src={spam}
-              className="Objects"
-              style={{
-                position: "absolute",
-                transform: "translate(650px, 406px)",
-                width: "3rem",
-                height: "5rem",
-              }}
-            />
-          </a>
-        </div>
-        <div {...props}>
+
+        <div {...props} className="Objects">
           <a href="#sw">
             <img
               src={laptop}
-              className="Objects"
               style={{
                 position: "absolute",
-                transform: "translate(650px, 406px)",
+                transform: "translate(645px, 456px)",
                 width: "8rem",
                 height: "8rem",
               }}
             />
           </a>
         </div>
-        <div {...props}>
+        <div {...props} className="Objects" style={{ zIndex: 100 }}>
+          <a href="#hawaii">
+            <img
+              src={spam}
+              style={{
+                position: "absolute",
+                transform: "translate(650px, 456px) rotate(-5deg)",
+                width: "2.8rem",
+                height: "2.8rem",
+              }}
+            />
+          </a>
+        </div>
+        <div {...props} className="Objects">
           <a href="#pub">
             <img
               src={book}
-              className="Objects"
               style={{
                 position: "absolute",
-                transform: "translate(650px, 406px)",
+                transform: "translate(200px, 456px)",
                 width: "5rem",
                 height: "5rem",
               }}
             />
           </a>
         </div>
-        <div {...props}>
+        <div {...props} className="Objects">
           <a href="#science">
             <img
               src={science}
-              className="Objects"
               style={{
                 position: "absolute",
-                transform: "translate(250px, 406px)",
+                transform: "translate(368px, 250px)",
                 width: "5rem",
                 height: "5rem",
               }}
             />
           </a>
         </div>
-        <div {...props}>
+        <div {...props} className="Objects">
           <a href="#education">
             <img
               src={cert}
-              className="Objects"
               style={{
                 position: "absolute",
-                transform: "translate(450px, 406px)",
-                width: "5rem",
-                height: "5rem",
+                transform: "translate(540px, 240px) rotate(1deg)",
+                width: "5.8rem",
+                height: "5.8rem",
               }}
             />
           </a>
         </div>
-        <div onClick={() => console.log("download resume")}>
+        <div className="Objects" onClick={() => console.log("download resume")}>
           <img
             src={resume}
-            className="Objects"
             style={{
               position: "absolute",
-              transform: "translate(450px, 406px)",
-              width: "5rem",
-              height: "5rem",
+              transform: "translate(310px, 536px) rotate(2deg)",
+              width: "2.5rem",
+              height: "2.5rem",
             }}
           />
         </div>
-        <div {...props}>
+        <div {...props} className="Objects">
           <a href="#bee">
             <img
               src={bee}
-              className="Objects"
               style={{
                 position: "absolute",
-                transform: "translate(150px, 106px)",
-                width: "5rem",
-                height: "5rem",
+                transform: "translate(730px, 356px)",
+                width: "2.7rem",
+                height: "2.7rem",
               }}
             />
           </a>

@@ -13,7 +13,7 @@ export const QuestionMenu = (props: Generic): JSX.Element => {
         borderRadius: "4px 4px 0px 0px",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         position: "absolute",
-        backgroundColor: "lightgray",
+        backgroundColor: "white",
         flexDirection: "row",
         border: "3px solid #679A99",
         transform: "translate(750px, 230px)",
