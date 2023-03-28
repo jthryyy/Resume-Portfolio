@@ -89,7 +89,9 @@ export const OpentronsS = (props: Generic): JSX.Element => {
           </ul>
         </div>
         <div style={{ flexDirection: "column", marginTop: "3rem" }}>
-          {fill && fill2 && fill3 ? null : (
+          {fill && fill2 && fill3 ? (
+            <div style={{ height: "1.2rem" }} />
+          ) : (
             <div
               className="container reveal"
               style={{

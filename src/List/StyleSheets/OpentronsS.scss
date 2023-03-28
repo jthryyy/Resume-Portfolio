@@ -8,6 +8,11 @@
   position: relative;
 }
 
+#beaker:hover {
+  border: 5px solid lightgray;
+  border-top: 0;
+}
+
 #liquid {
   background-color: #3f2c62;
   border: 10px solid #3f2c62;
@@ -49,6 +54,11 @@
   bottom: 205px;
   width: 60px;
   position: relative;
+}
+
+#beaker2:hover {
+  border: 5px solid lightgray;
+  border-top: 0;
 }
 
 #liquid2 {
@@ -97,6 +107,11 @@
   width: 60px;
   bottom: 25.6rem;
   position: relative;
+}
+
+#beaker3:hover {
+  border: 5px solid lightgray;
+  border-top: 0;
 }
 
 #liquid3 {
