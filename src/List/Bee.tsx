@@ -34,7 +34,9 @@ export const Bee = (props: Generic): JSX.Element => {
         }}
       >
         <div className="moveLeft" style={{ marginTop: "2px" }}>
-          <Back onClick={props.onClick} />
+          <a href="#home">
+            <Back onClick={props.onClick} />
+          </a>
         </div>
         <div
           style={{

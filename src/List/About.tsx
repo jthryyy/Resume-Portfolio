@@ -32,7 +32,9 @@ export const About = (props: Generic): JSX.Element => {
           style={{ marginLeft: "1.2rem", marginBottom: "0.8rem" }}
           className="moveLeft"
         >
-          <Back onClick={props.onClick} />
+          <a href="#home">
+            <Back onClick={props.onClick} />
+          </a>
         </div>
         <a
           href="https://www.instagram.com/hopiathefloof/"

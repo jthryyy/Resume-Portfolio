@@ -39,7 +39,9 @@ export const OpentronsS = (props: Generic): JSX.Element => {
         }}
       >
         <div className="moveLeft" style={{ marginTop: "2px" }}>
-          <Back onClick={props.onClick} difHover />
+          <a href="#home">
+            <Back onClick={props.onClick} difHover />
+          </a>
         </div>
         <div
           style={{

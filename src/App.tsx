@@ -18,10 +18,15 @@ function App() {
   const props = {
     onClick: () => setList(true),
   };
+
+  const handleListClick = (): void => {
+    setList(false);
+  };
   return list ? (
-    <List onClick={() => setList(false)} />
+    <List onClick={handleListClick} />
   ) : (
     <div
+      id="home"
       className="App"
       style={{
         justifyContent: "center",
