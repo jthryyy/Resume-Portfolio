@@ -24,6 +24,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
         fontSize: "1.2rem",
         color: "black",
         width: "65rem",
+        cursor: "default",
       }}
     >
       <div

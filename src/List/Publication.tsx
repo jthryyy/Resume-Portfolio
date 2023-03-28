@@ -11,22 +11,23 @@ export const Publication = (props: Generic): JSX.Element => {
     <div
       className="moveUp"
       style={{
-        display: "flex",
         flexDirection: "column",
         backgroundColor: "#EFAA94",
-        height: "34rem",
-        margin: "1.5rem 2.5rem",
+        height: "33rem",
+        margin: "1.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.6rem",
         color: "black",
-        justifyContent: "center",
+        width: "44rem",
+        display: "flex",
+        alignItems: "center",
       }}
     >
-      <div className="moveLeft" style={{ padding: "2rem" }}>
+      <div className="moveLeft" style={{ padding: "2rem 2rem 1rem" }}>
         <Back onClick={props.onClick} />
       </div>
-      <div id="all" aria-label="book">
+      <div id="container" aria-label="book">
         <div id="page-flip">
           <div id="r1">
             <div id="p1">

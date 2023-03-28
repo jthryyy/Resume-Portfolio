@@ -16,6 +16,7 @@ export const Cert = (): JSX.Element => {
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",
         color: "black",
+        cursor: "default",
         width: "21rem",
       }}
     >

@@ -34,6 +34,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
         fontSize: "1.2rem",
         color: "black",
         width: "65rem",
+        cursor: "default",
       }}
     >
       <div
@@ -137,7 +138,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
               className="thought movedDown"
               style={{ position: "absolute", top: "1.5rem", left: "25rem" }}
             >
-              Hungry? Click on the spam to eat it!
+              Hungry? Click on the spam masubi to eat it!
             </div>
           ) : null}
         </div>

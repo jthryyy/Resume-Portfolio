@@ -1,9 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
-#all {
+#container {
   width: 440px;
   height: 430px;
   justify-content: center;
@@ -13,19 +8,19 @@ body {
 
 #page-flip {
   background-image: url("../../Images/pubBackground.png");
+  padding: 28px 80px 40px 300px;
+  width: 242px;
+  height: 335px;
+  left: -220px;
   position: absolute;
-  padding: 28px 80px 40px 260px;
-  width: 440px;
-  height: 340px;
-  left: -160px;
+
   overflow: hidden;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 #r1 {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   transform-origin: 1315px 500px;
   transform: translate(-1030px, -500px) rotate(-32deg);
   transition-property: -webkit-transform, -webkit-transform-origin;
@@ -67,7 +62,7 @@ body {
   height: 360px;
   box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-size: contain;
   background-image: url("../../Images/pub.png");
 }
@@ -78,7 +73,7 @@ body {
   transition-property: -webkit-transform, -webkit-transform-origin;
   transition-duration: 1s;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 #s3 {
@@ -87,7 +82,7 @@ body {
   transition-property: -webkit-transform, -webkit-transform-origin;
   transition-duration: 1s;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 #page-flip:hover #s3 {
@@ -119,7 +114,7 @@ body {
   height: 388px;
   position: absolute;
   overflow: hidden;
-  z-index: 3;
+  z-index: 4;
   left: 100px;
 }
 

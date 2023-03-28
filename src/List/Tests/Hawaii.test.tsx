@@ -28,7 +28,7 @@ describe("Hawaii", () => {
     getByRole("img", { name: "Spam Masubi_3" });
     getByText("Still hungry? Eat again!");
     fireEvent.click(getByLabelText("spamContainer_3"));
-    getByText("Hungry? Click on the spam to eat it!");
+    getByText("Hungry? Click on the spam masubi to eat it!");
   });
   it("clicking on spam and then still hungry button to get back to full spam", () => {
     const { getByLabelText, getByText, getByRole } = render(
@@ -43,6 +43,6 @@ describe("Hawaii", () => {
     fireEvent.click(getByLabelText("spamContainer_2"));
     getByRole("img", { name: "Spam Masubi_3" });
     fireEvent.click(getByText("Still hungry? Eat again!"));
-    getByText("Hungry? Click on the spam to eat it!");
+    getByText("Hungry? Click on the spam masubi to eat it!");
   });
 });

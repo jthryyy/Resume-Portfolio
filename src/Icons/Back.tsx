@@ -1,10 +1,10 @@
 import "../App.css";
 import type { Generic } from "../types";
-interface Back extends Generic {
+interface BackProps extends Generic {
   difHover?: boolean;
 }
 
-export const Back = (props: Back): JSX.Element => {
+export const Back = (props: BackProps): JSX.Element => {
   return (
     <div
       aria-label={`Back_${

@@ -25,30 +25,36 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
   if (page === 1) {
     setting = (
       <>
-        <div className="moveUp" style={{ fontSize: "1.6rem", padding: "1rem" }}>
+        <div
+          className="moveUp"
+          style={{ fontSize: "1.6rem", padding: "1rem 0.5rem 0.5rem" }}
+        >
           Software Engineer, Opentrons Labworks
         </div>
         <div
           className="moveDown"
-          style={{ fontSize: "1.6rem", padding: "1rem" }}
+          style={{ fontSize: "1.6rem", padding: "0.5rem" }}
         >
           July 2021 - Present
         </div>
-        <div className="moveUp" style={{ fontSize: "1.6rem", padding: "1rem" }}>
-          Stuff about the Desktop App for OT-2 and Opentrons Flex
+        <div
+          className="moveUp"
+          style={{ fontSize: "1.6rem", padding: "0.5rem" }}
+        >
+          Desktop App for OT-2 and Opentrons Flex
         </div>
       </>
     );
   } else if (page === 2) {
     setting = (
       <div className="moveUp" style={{ fontSize: "1.6rem", padding: "1rem" }}>
-        Stuff about Protocol Designer
+        Protocol Designer
       </div>
     );
   } else if (page === 3) {
     setting = (
       <div className="moveDown" style={{ fontSize: "1.6rem", padding: "1rem" }}>
-        Stuff about modules: Heater-Shaker GEN1 and Thermocycler GEN2
+        Heater-Shaker GEN1 and Thermocycler GEN2 modules
       </div>
     );
   }
@@ -65,10 +71,10 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
         color: "black",
         height: "30rem",
         width: "65rem",
+        cursor: "default",
       }}
     >
       <div
-        className="container reveal"
         style={{
           padding: "2rem",
           flexDirection: "row",

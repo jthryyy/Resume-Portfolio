@@ -17,6 +17,8 @@ export const About = (props: Generic): JSX.Element => {
         color: "black",
         padding: "2rem",
         display: "flex",
+        width: "65rem",
+        cursor: "default",
       }}
     >
       <div

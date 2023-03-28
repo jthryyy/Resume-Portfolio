@@ -11,9 +11,9 @@ export const List = (props: Generic): JSX.Element => {
   return (
     <div
       style={{
-        flexDirection: "row",
-
-        justifyContent: "center",
+        flexDirection: "column",
+        display: "flex",
+        alignItems: "center",
       }}
     >
       <div id="sw">
