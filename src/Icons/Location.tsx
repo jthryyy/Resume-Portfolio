@@ -1,6 +1,6 @@
 export const Location = (): JSX.Element => {
   return (
-    <div style={{ width: "1.5rem", height: "1.5rem" }}>
+    <div aria-label="Location" style={{ width: "1.5rem", height: "1.5rem" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

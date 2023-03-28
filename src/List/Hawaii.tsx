@@ -5,7 +5,6 @@ import spam from "../Images/SpamFull.png";
 import spam2 from "../Images/spam2.png";
 import spam3 from "../Images/Spam3.png";
 import spam4 from "../Images/Spam4.png";
-
 import { Back, Location } from "../Icons";
 import { Reveal } from "../Utils/Reveal";
 import type { Generic } from "../types";
@@ -57,7 +56,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
             display: "flex",
           }}
         >
-          <div className="moveUp"> Group Leader, YMCA of Honolulu</div>
+          <div className="moveUp">Group Leader, YMCA of Honolulu</div>
           <div
             className="moveDown"
             style={{
@@ -74,7 +73,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
             <Location />
 
             <div style={{ marginLeft: "4px", marginBottom: "2px" }}>
-              Honolulu, Hawai'i
+              Honolulu, Hawai`i
             </div>
           </div>
           <div className="moveUp" style={{ marginTop: "1rem" }}>
@@ -90,6 +89,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
         <div>
           <div style={{ position: "relative" }}>
             <img
+              alt="background"
               src={background}
               width="500"
               height="300"
@@ -100,8 +100,9 @@ export const Hawaii = (props: Generic): JSX.Element => {
             />
           </div>
           <div
+            aria-label={`spamContainer_${eatMe}`}
             className="moveDown"
-            onClick={() => setEatMe(eatMe + 1)}
+            onClick={() => setEatMe(eatMe === 3 ? 0 : eatMe + 1)}
             style={{
               position: "absolute",
               top: "-4rem",
@@ -109,7 +110,12 @@ export const Hawaii = (props: Generic): JSX.Element => {
               cursor: eatMe === 3 ? "default" : "pointer",
             }}
           >
-            <img src={src} width="500" height="500" />
+            <img
+              src={src}
+              alt={`Spam Masubi_${eatMe}`}
+              width="500"
+              height="500"
+            />
           </div>
           {eatMe === 3 ? (
             <div

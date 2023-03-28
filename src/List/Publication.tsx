@@ -26,7 +26,7 @@ export const Publication = (props: Generic): JSX.Element => {
       <div className="moveLeft" style={{ padding: "2rem" }}>
         <Back onClick={props.onClick} />
       </div>
-      <div id="all">
+      <div id="all" aria-label="book">
         <div id="page-flip">
           <div id="r1">
             <div id="p1">

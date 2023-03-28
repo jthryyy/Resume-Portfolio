@@ -41,7 +41,7 @@ export const Bee = (props: Generic): JSX.Element => {
             display: "flex",
           }}
         >
-          <div className="moveUp"> Lab Technician, Princeton University</div>
+          <div className="moveUp">Lab Technician, Princeton University</div>
           <div
             className="moveDown"
             style={{
@@ -68,7 +68,7 @@ export const Bee = (props: Generic): JSX.Element => {
             <li style={{ marginBottom: "1rem" }}>
               Troubleshooted and analyzed molecular protocols (i.e. mRNA
               extraction, Tag-seq, single cell-seq) adding over a thousand
-              unique bee sequences to the lab's genetic library
+              unique bee sequences to the lab`s genetic library
             </li>
             <li>
               Advised undergraduate and graduate students in molecular
@@ -81,7 +81,7 @@ export const Bee = (props: Generic): JSX.Element => {
       </div>
 
       <div className="wrap">
-        <div className="wrap2">
+        <div className="wrap2" aria-label="bee">
           <div className="body"></div>
           <div className="wing1"></div>
           <div className="wing2"></div>

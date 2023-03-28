@@ -27,7 +27,7 @@ export const Cert = (): JSX.Element => {
           flexDirection: "column",
         }}
       >
-        <div className="moveDown">
+        <div className="moveDown" aria-label="star">
           <svg
             className="badge"
             height="200"
@@ -38,7 +38,7 @@ export const Cert = (): JSX.Element => {
               className="inner"
               fill="#F2D8D9"
               stroke="black"
-              stroke-width="3"
+              strokeWidth="3"
               cx="180"
               cy="180"
               r="108.3"
@@ -48,17 +48,17 @@ export const Cert = (): JSX.Element => {
               <path
                 fill="#f7d391"
                 stroke="black"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M180 107.8l16.9 52.1h54.8l-44.3 32.2 16.9 52.1-44.3-32.2-44.3 32.2 16.9-52.1-44.3-32.2h54.8z"
               />
               <circle
                 fill="#f7d391"
                 stroke="black"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 cx="180"
                 cy="107.8"
                 r="4.4"
@@ -66,9 +66,9 @@ export const Cert = (): JSX.Element => {
               <circle
                 fill="#f7d391"
                 stroke="black"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 cx="223.7"
                 cy="244.2"
                 r="4.4"
@@ -76,9 +76,9 @@ export const Cert = (): JSX.Element => {
               <circle
                 fill="#f7d391"
                 stroke="black"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 cx="135.5"
                 cy="244.2"
                 r="4.4"
@@ -86,9 +86,9 @@ export const Cert = (): JSX.Element => {
               <circle
                 fill="#f7d391"
                 stroke="black"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 cx="108.3"
                 cy="160.4"
                 r="4.4"
@@ -96,9 +96,9 @@ export const Cert = (): JSX.Element => {
               <circle
                 fill="#f7d391"
                 stroke="black"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 cx="251.7"
                 cy="160.4"
                 r="4.4"

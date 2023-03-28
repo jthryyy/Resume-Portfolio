@@ -8,8 +8,8 @@ import cert from "./Images/image5.png";
 import resume from "./Images/image6.png";
 import bee from "./Images/image7.png";
 import "./App.css";
-import { Question } from "./Icons";
 import { QuestionMenu } from "./Components/QuestionMenu";
+import { Question } from "./Icons";
 import { List } from "./List";
 
 function App() {
@@ -27,6 +27,14 @@ function App() {
         justifyContent: "center",
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          transform: "translate(-200px, 120px) rotate(-30deg)",
+        }}
+      >
+        Jet Rader - Developer
+      </div>
       <div className="Background">
         {menu ? <QuestionMenu onClick={() => setList(true)} /> : null}
         <div
@@ -34,9 +42,10 @@ function App() {
         >
           <Question onClick={() => setMenu(menu ? false : true)} />
         </div>
-        <div {...props} className="Objects">
+        <div {...props} className="Objects" aria-label="AboutMe">
           <a href="#AboutMe" style={{ zIndex: 5 }}>
             <img
+              alt="Portrait"
               src={portrait}
               className="plz"
               style={{
@@ -52,6 +61,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#sw">
             <img
+              alt="Labtop"
               className="plz"
               src={laptop}
               style={{
@@ -66,6 +76,7 @@ function App() {
         <div {...props} className="Objects" style={{ zIndex: 100 }}>
           <a href="#hawaii">
             <img
+              alt="Spam masubi"
               className="plz"
               src={spam}
               style={{
@@ -80,6 +91,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#pub">
             <img
+              alt="Book"
               className="plz"
               src={book}
               style={{
@@ -94,6 +106,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#science">
             <img
+              alt="Test tubes"
               className="plz"
               src={science}
               style={{
@@ -108,6 +121,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#education">
             <img
+              alt="Diploma"
               className="plz"
               src={cert}
               style={{
@@ -122,6 +136,7 @@ function App() {
         <div className="Objects" onClick={() => console.log("download resume")}>
           <img
             src={resume}
+            alt="Resume"
             className="plz"
             style={{
               position: "absolute",
@@ -134,6 +149,7 @@ function App() {
         <div {...props} className="Objects">
           <a href="#bee">
             <img
+              alt="Bee"
               className="plz"
               src={bee}
               style={{

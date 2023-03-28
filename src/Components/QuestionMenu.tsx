@@ -19,14 +19,14 @@ export const QuestionMenu = (props: Generic): JSX.Element => {
         transform: "translate(750px, 230px)",
       }}
     >
-      <div {...items}>
+      <div {...items} aria-label="opentronsSw">
         <a href="#sw" className="text">
-          Opentron Software
+          Opentrons Software
         </a>
       </div>
       <div {...items}>
         <a href="#science" className="text">
-          Opentron Science
+          Opentrons Science
         </a>
       </div>
       <div {...items}>

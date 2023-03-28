@@ -1,13 +1,10 @@
 import "../App.css";
-import type { StyleProps } from "../Utils/types";
+import { Generic } from "../types";
 
-interface Question extends StyleProps {
-  onClick: () => void;
-}
-
-export const Question = (props: Question): JSX.Element => {
+export const Question = (props: Generic): JSX.Element => {
   return (
     <div
+      aria-label="Question icon"
       onClick={props.onClick}
       className="Question"
       style={{ width: "1.5rem", height: "1.5rem" }}

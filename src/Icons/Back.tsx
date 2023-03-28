@@ -1,14 +1,17 @@
 import "../App.css";
-import type { StyleProps } from "../Utils/types";
-
-interface Back extends StyleProps {
-  onClick: () => void;
+import type { Generic } from "../types";
+interface Back extends Generic {
   difHover?: boolean;
 }
 
 export const Back = (props: Back): JSX.Element => {
   return (
     <div
+      aria-label={`Back_${
+        props.difHover != null && props.difHover
+          ? "classNameBackAlt"
+          : "classNameBack"
+      }`}
       onClick={props.onClick}
       className={props.difHover ? "BackAlt" : "Back"}
       style={{ width: "1.5rem", height: "1.5rem" }}
@@ -20,9 +23,9 @@ export const Back = (props: Back): JSX.Element => {
         viewBox="0 0 24 24"
         fill="none"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5" />
       </svg>

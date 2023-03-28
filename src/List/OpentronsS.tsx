@@ -86,15 +86,17 @@ export const OpentronsS = (props: Generic): JSX.Element => {
           </ul>
         </div>
         <div style={{ flexDirection: "column", marginTop: "3rem" }}>
-          <div
-            className="container reveal"
-            style={{
-              fontSize: "1.2rem",
-              zIndex: 5,
-            }}
-          >
-            Click to fill up the beakers!
-          </div>
+          {fill && fill2 && fill3 ? null : (
+            <div
+              className="container reveal"
+              style={{
+                fontSize: "1.2rem",
+                zIndex: 5,
+              }}
+            >
+              Click to fill up the beakers!
+            </div>
+          )}
           <div
             className="container reveal"
             style={{
@@ -105,6 +107,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
             }}
           >
             <div
+              aria-label="beaker"
               id="beaker"
               className="moveUp"
               onClick={() => setFill(true)}
@@ -116,6 +119,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
               </div>
             </div>
             <div
+              aria-label="beaker2"
               id="beaker2"
               className="moveUp"
               onClick={() => setFill2(true)}
@@ -127,6 +131,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
               </div>
             </div>
             <div
+              aria-label="beaker3"
               id="beaker3"
               className="moveUp"
               onClick={() => setFill3(true)}

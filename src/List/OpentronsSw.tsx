@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Back, Location } from "../Icons";
-import { useInterval } from "../Utils/useInterval";
+import { useInterval } from "../Hooks/useInterval";
 import { Reveal } from "../Utils/Reveal";
 import type { Generic } from "../types";
 

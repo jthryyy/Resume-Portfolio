@@ -32,7 +32,11 @@ export const About = (props: Generic): JSX.Element => {
         >
           <Back onClick={props.onClick} />
         </div>
-        <a href="https://www.instagram.com/hopiathefloof/" className="moveLeft">
+        <a
+          href="https://www.instagram.com/hopiathefloof/"
+          className="moveLeft"
+          aria-label="InstaLink"
+        >
           <div className="socialMed">
             <Insta />
           </div>
@@ -40,12 +44,17 @@ export const About = (props: Generic): JSX.Element => {
         <a
           href="https://www.linkedin.com/in/jethary-rader-5ab428153/"
           className="moveLeft"
+          aria-label="LinkedInLink"
         >
           <div className="socialMed">
             <LinkedIn />
           </div>
         </a>
-        <a href="https://github.com/jthryyy" className="moveLeft">
+        <a
+          href="https://github.com/jthryyy"
+          className="moveLeft"
+          aria-label="GithubLink"
+        >
           <div className="socialMed">
             <Github />
           </div>
@@ -56,6 +65,7 @@ export const About = (props: Generic): JSX.Element => {
         className="moveDown"
       >
         <img
+          alt="portrait"
           src={portrait}
           width="170px"
           style={{
@@ -82,7 +92,7 @@ export const About = (props: Generic): JSX.Element => {
               cursor: "default",
             }}
           >
-            <div>hi, I'm jet!</div>
+            <div>hi, I`m jet!</div>
           </div>
         </div>
         <div
