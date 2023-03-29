@@ -84,8 +84,8 @@ export const Hawaii = (props: Generic): JSX.Element => {
           </div>
           <ul style={{ overflow: "scroll" }} className="moveDown">
             <li>
-              Oversaw and motivated 4th and 5th grade students and organized
-              daily planning to ensure a successful educational summer
+              Directed and motivated 4th and 5th grade students, organizing
+              daily educational activities to achieve a productive summer
             </li>
           </ul>
         </div>

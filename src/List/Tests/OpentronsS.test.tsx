@@ -11,10 +11,10 @@ describe("OpentronsS", () => {
     getByText("New York City, New York");
     getByText("October 2019 - July 2021");
     getByText(
-      "Collected extensive extraction data and validated numerous kits across 8 manufacturers, leading to several publications, a live webinar and outperforming competitor standards"
+      "Led validation efforts of numerous kits across 8 manufacturers, collecting extensive extraction data and surpassing competitor standards, resulting in multiple publications and a live webinar"
     );
     getByText(
-      "Supported 36 different labs with over 360 robots as a science consultant during the first year of the COVID-19 pandemic, generating record breaking quarterly revenue, three quarters in a row"
+      "Consulted with 36 labs and oversaw 360+ robots as a science consultant during the first year of the COVID-19 pandemic, contributing to three quarters of record-breaking revenue"
     );
     fireEvent.click(getByLabelText("Back_classNameBackAlt"));
     expect(props.onClick).toHaveBeenCalled();

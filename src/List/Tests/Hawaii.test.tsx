@@ -13,13 +13,13 @@ describe("Hawaii", () => {
     getByText("Honolulu, Hawai`i");
     getByText("May 2018 - August 2018");
     getByText(
-      "Oversaw and motivated 4th and 5th grade students and organized daily planning to ensure a successful educational summer"
+      "Directed and motivated 4th and 5th grade students, organizing daily educational activities to achieve a productive summer"
     );
     fireEvent.click(getByLabelText("Back_classNameBack"));
     expect(props.onClick).toHaveBeenCalled();
     getByRole("img", { name: "background" });
     getByRole("img", { name: "Spam Masubi_0" });
-    getByText("Hungry? Click on the spam to eat it!");
+    getByText("Hungry? Click on the spam masubi to eat it!");
     fireEvent.click(getByLabelText("spamContainer_0"));
     getByRole("img", { name: "Spam Masubi_1" });
     fireEvent.click(getByLabelText("spamContainer_1"));
@@ -35,7 +35,7 @@ describe("Hawaii", () => {
       <Hawaii {...props} />
     );
     getByRole("img", { name: "Spam Masubi_0" });
-    getByText("Hungry? Click on the spam to eat it!");
+    getByText("Hungry? Click on the spam masubi to eat it!");
     fireEvent.click(getByLabelText("spamContainer_0"));
     getByRole("img", { name: "Spam Masubi_1" });
     fireEvent.click(getByLabelText("spamContainer_1"));

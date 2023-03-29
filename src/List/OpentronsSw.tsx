@@ -41,20 +41,26 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
           className="moveUp"
           style={{ fontSize: "1.6rem", padding: "0.5rem" }}
         >
-          Desktop App for OT-2 and Opentrons Flex
+          Spearheaded the development and revitalization of the next-generation
+          Opentrons Run app, collaborating closely with Design, Product, and
+          other engineers to ensure adoption by all Opentrons robot customers
         </div>
       </>
     );
   } else if (page === 2) {
     setting = (
       <div className="moveUp" style={{ fontSize: "1.6rem", padding: "1rem" }}>
-        Protocol Designer
+        Led the development and release efforts of Protocol Designer from
+        2022-2023, a visual protocol creation tool that streamlines the workflow
+        for Opentrons users
       </div>
     );
   } else if (page === 3) {
     setting = (
       <div className="moveDown" style={{ fontSize: "1.6rem", padding: "1rem" }}>
-        Heater-Shaker GEN1 and Thermocycler GEN2 modules
+        Developed the frontend interfaces for the latest Opentrons modules,
+        including the Heater-Shaker Module GEN1 and Thermocycler Module GEN2, as
+        well as the Opentrons Flex touchscreen
       </div>
     );
   }

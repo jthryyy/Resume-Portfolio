@@ -76,15 +76,14 @@ export const OpentronsS = (props: Generic): JSX.Element => {
           </div>
           <ul style={{ width: "80%", overflow: "scroll" }} className="moveDown">
             <li style={{ marginBottom: "1rem" }}>
-              Collected extensive extraction data and validated numerous kits
-              across 8 manufacturers, leading to several publications, a live
-              webinar and outperforming competitor standards
+              Led validation efforts of numerous kits across 8 manufacturers,
+              collecting extensive extraction data and surpassing competitor
+              standards, resulting in multiple publications and a live webinar
             </li>
             <li>
-              Supported 36 different labs with over 360 robots as a science
+              Consulted with 36 labs and oversaw 360+ robots as a science
               consultant during the first year of the COVID-19 pandemic,
-              generating record breaking quarterly revenue, three quarters in a
-              row
+              contributing to three quarters of record-breaking revenue
             </li>
           </ul>
         </div>

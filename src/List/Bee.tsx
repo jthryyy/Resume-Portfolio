@@ -69,15 +69,16 @@ export const Bee = (props: Generic): JSX.Element => {
           </div>
           <ul style={{ width: "50%", overflow: "scroll" }} className="moveDown">
             <li style={{ marginBottom: "1rem" }}>
-              Troubleshooted and analyzed molecular protocols (i.e. mRNA
-              extraction, Tag-seq, single cell-seq) adding over a thousand
-              unique bee sequences to the lab`s genetic library
+              Analyzed and troubleshot various molecular protocols, such as mRNA
+              extraction, Tag-seq, and single cell-seq, resulting in the
+              successful addition of over a thousand unique bee sequences to the
+              lab`s genetic library
             </li>
             <li>
-              Advised undergraduate and graduate students in molecular
-              protocols, including time at Mpala Research Centre in Nairobi,
-              Kenya where I mentored students to sequence over 5 million
-              bacterial reads from rhino fecal matter
+              Mentored undergraduate and graduate students in molecular
+              protocols, including leading a group at Mpala Research Centre in
+              Nairobi, Kenya, where we sequenced over 5 million bacterial reads
+              from rhino fecal matter and analyzed the resulting data
             </li>
           </ul>
         </div>
