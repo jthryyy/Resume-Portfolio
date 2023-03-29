@@ -26,8 +26,18 @@ describe("Hawaii", () => {
     getByRole("img", { name: "Spam Masubi_2" });
     fireEvent.click(getByLabelText("spamContainer_2"));
     getByRole("img", { name: "Spam Masubi_3" });
-    getByText("Still hungry? Eat again!");
     fireEvent.click(getByLabelText("spamContainer_3"));
+    getByRole("img", { name: "Spam Masubi_4" });
+    fireEvent.click(getByLabelText("spamContainer_4"));
+    getByRole("img", { name: "Spam Masubi_5" });
+    fireEvent.click(getByLabelText("spamContainer_5"));
+    getByRole("img", { name: "Spam Masubi_6" });
+    fireEvent.click(getByLabelText("spamContainer_6"));
+    getByRole("img", { name: "Spam Masubi_7" });
+    fireEvent.click(getByLabelText("spamContainer_7"));
+    getByRole("img", { name: "Spam Masubi_8" });
+    getByText("Still hungry? Eat again!");
+    fireEvent.click(getByLabelText("spamContainer_8"));
     getByText("Hungry? Click on the spam masubi to eat it!");
   });
   it("clicking on spam and then still hungry button to get back to full spam", () => {
@@ -42,6 +52,16 @@ describe("Hawaii", () => {
     getByRole("img", { name: "Spam Masubi_2" });
     fireEvent.click(getByLabelText("spamContainer_2"));
     getByRole("img", { name: "Spam Masubi_3" });
+    fireEvent.click(getByLabelText("spamContainer_3"));
+    getByRole("img", { name: "Spam Masubi_4" });
+    fireEvent.click(getByLabelText("spamContainer_4"));
+    getByRole("img", { name: "Spam Masubi_5" });
+    fireEvent.click(getByLabelText("spamContainer_5"));
+    getByRole("img", { name: "Spam Masubi_6" });
+    fireEvent.click(getByLabelText("spamContainer_6"));
+    getByRole("img", { name: "Spam Masubi_7" });
+    fireEvent.click(getByLabelText("spamContainer_7"));
+    getByRole("img", { name: "Spam Masubi_8" });
     fireEvent.click(getByText("Still hungry? Eat again!"));
     getByText("Hungry? Click on the spam masubi to eat it!");
   });

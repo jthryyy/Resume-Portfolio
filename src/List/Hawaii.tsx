@@ -5,6 +5,11 @@ import spam from "../Images/SpamFull.png";
 import spam2 from "../Images/spam2.png";
 import spam3 from "../Images/Spam3.png";
 import spam4 from "../Images/Spam4.png";
+import spam5 from "../Images/spam5.png";
+import spam6 from "../Images/spam6.png";
+import spam7 from "../Images/spam7.png";
+import spam8 from "../Images/spam8.png";
+import spam9 from "../Images/spam9.png";
 import { Back, Location } from "../Icons";
 import { Reveal } from "../Utils/Reveal";
 import type { Generic } from "../types";
@@ -20,6 +25,16 @@ export const Hawaii = (props: Generic): JSX.Element => {
     src = spam3;
   } else if (eatMe === 3) {
     src = spam4;
+  } else if (eatMe === 4) {
+    src = spam5;
+  } else if (eatMe === 5) {
+    src = spam6;
+  } else if (eatMe === 6) {
+    src = spam7;
+  } else if (eatMe === 7) {
+    src = spam8;
+  } else if (eatMe === 8) {
+    src = spam9;
   }
   return (
     <div
@@ -105,12 +120,12 @@ export const Hawaii = (props: Generic): JSX.Element => {
           <div
             aria-label={`spamContainer_${eatMe}`}
             className="moveDown"
-            onClick={() => setEatMe(eatMe === 3 ? 0 : eatMe + 1)}
+            onClick={() => setEatMe(eatMe === 8 ? 0 : eatMe + 1)}
             style={{
               position: "absolute",
               top: "-4rem",
               zIndex: 100,
-              cursor: eatMe === 3 ? "default" : "pointer",
+              cursor: eatMe === 8 ? "default" : "pointer",
             }}
           >
             <img
@@ -120,7 +135,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
               height="500"
             />
           </div>
-          {eatMe === 3 ? (
+          {eatMe === 8 ? (
             <div
               style={{
                 cursor: "pointer",

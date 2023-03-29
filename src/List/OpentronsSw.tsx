@@ -49,7 +49,16 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
     );
   } else if (page === 2) {
     setting = (
-      <div className="moveUp" style={{ fontSize: "1.6rem", padding: "1rem" }}>
+      <div
+        className="moveUp"
+        style={{
+          fontSize: "1.6rem",
+          padding: "0rem 1rem",
+          display: "flex",
+          height: "19rem",
+          alignItems: "center",
+        }}
+      >
         Led the development and release efforts of Protocol Designer from
         2022-2023, a visual protocol creation tool that streamlines the workflow
         for Opentrons users
@@ -57,7 +66,16 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
     );
   } else if (page === 3) {
     setting = (
-      <div className="moveDown" style={{ fontSize: "1.6rem", padding: "1rem" }}>
+      <div
+        className="moveDown"
+        style={{
+          fontSize: "1.6rem",
+          padding: "0rem 1rem",
+          display: "flex",
+          height: "19rem",
+          alignItems: "center",
+        }}
+      >
         Developed the frontend interfaces for the latest Opentrons modules,
         including the Heater-Shaker Module GEN1 and Thermocycler Module GEN2, as
         well as the Opentrons Flex touchscreen
