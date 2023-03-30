@@ -8,7 +8,7 @@ describe("About", () => {
       <About {...props} />
     );
     getByText(
-      "I am a lab scientist turned developer who prioritizes creating user-friendly, visually stunning, and streamlined UI"
+      "I am a lab scientist turned developer who prioritizes creating user-friendly, visually stunning, and streamlined UI."
     );
     getByText("Reach out if you want to talk about code or my dog, Hopia.");
     getByText("hi, I`m jet!");

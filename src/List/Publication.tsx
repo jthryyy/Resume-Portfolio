@@ -29,7 +29,7 @@ export const Publication = (props: Generic): JSX.Element => {
           <Back onClick={props.onClick} />
         </a>
       </div>
-      <div id="container" aria-label="book">
+      <div id="container" aria-label="book" className="container reveal">
         <div id="page-flip">
           <div id="r1">
             <div id="p1">

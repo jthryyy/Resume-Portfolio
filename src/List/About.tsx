@@ -105,7 +105,7 @@ export const About = (props: Generic): JSX.Element => {
             style={{ marginTop: "2rem", fontSize: "1.2rem" }}
           >
             I am a lab scientist turned developer who prioritizes creating
-            user-friendly, visually stunning, and streamlined UI
+            user-friendly, visually stunning, and streamlined UI.
           </div>
           <div
             className="moveUp"
