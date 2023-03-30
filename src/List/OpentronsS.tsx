@@ -18,7 +18,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
       style={{
         backgroundColor: "#f1d7d8",
         height: "26rem",
-        margin: "2.5rem 2.5rem",
+        margin: "1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",
