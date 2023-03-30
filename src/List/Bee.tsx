@@ -18,7 +18,7 @@ export const Bee = (props: Generic): JSX.Element => {
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",
         color: "black",
-        width: "65rem",
+        width: "95%",
         cursor: "default",
       }}
     >
@@ -67,7 +67,15 @@ export const Bee = (props: Generic): JSX.Element => {
           <div className="moveUp" style={{ marginTop: "1rem" }}>
             October 2018 - October 2019
           </div>
-          <ul style={{ width: "50%", overflow: "scroll" }} className="moveDown">
+          <ul
+            style={{
+              width: "50%",
+              overflow: "scroll",
+              height: "16rem",
+              marginBottom: "1.5rem",
+            }}
+            className="moveDown"
+          >
             <li style={{ marginBottom: "1rem" }}>
               Analyzed and troubleshot various molecular protocols, such as mRNA
               extraction, Tag-seq, and single cell-seq, resulting in the

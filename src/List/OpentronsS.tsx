@@ -17,13 +17,13 @@ export const OpentronsS = (props: Generic): JSX.Element => {
       className="moveUp"
       style={{
         backgroundColor: "#f1d7d8",
-        height: "28rem",
+        height: "26rem",
         margin: "2.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",
         color: "black",
-        width: "65rem",
+        width: "95%",
         cursor: "default",
       }}
     >
@@ -48,6 +48,7 @@ export const OpentronsS = (props: Generic): JSX.Element => {
             flexDirection: "column",
             display: "flex",
             width: "60%",
+            height: "100%",
           }}
         >
           <div className="moveUp">
@@ -74,7 +75,15 @@ export const OpentronsS = (props: Generic): JSX.Element => {
           <div className="moveUp" style={{ marginTop: "1rem" }}>
             October 2019 - July 2021
           </div>
-          <ul style={{ width: "80%", overflow: "scroll" }} className="moveDown">
+          <ul
+            style={{
+              width: "80%",
+              overflow: "scroll",
+              height: "14rem",
+              marginBottom: "1.5rem",
+            }}
+            className="moveDown"
+          >
             <li style={{ marginBottom: "1rem" }}>
               Led validation efforts of numerous kits across 8 manufacturers,
               collecting extensive extraction data and surpassing competitor
@@ -87,7 +96,13 @@ export const OpentronsS = (props: Generic): JSX.Element => {
             </li>
           </ul>
         </div>
-        <div style={{ flexDirection: "column", marginTop: "3rem" }}>
+        <div
+          style={{
+            flexDirection: "column",
+            marginTop: "3rem",
+            marginRight: "2rem",
+          }}
+        >
           {fill && fill2 && fill3 ? (
             <div style={{ height: "1.2rem" }} />
           ) : (

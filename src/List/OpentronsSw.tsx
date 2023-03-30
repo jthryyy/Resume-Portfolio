@@ -94,7 +94,7 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
         fontSize: "1.2rem",
         color: "black",
         height: "30rem",
-        width: "65rem",
+        width: "90%",
         cursor: "default",
       }}
     >
@@ -136,14 +136,13 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
         </div>
       </div>
       <div
+        className="swBackground"
         style={{
           backgroundColor: "black",
+          position: "absolute",
+          color: "white",
           height: "19rem",
           width: "29.2rem",
-          position: "absolute",
-          left: "18.2rem",
-          color: "white",
-          top: "5.5rem",
         }}
       >
         {setting}

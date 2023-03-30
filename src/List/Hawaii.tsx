@@ -48,7 +48,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",
         color: "black",
-        width: "65rem",
+        width: "95%",
         cursor: "default",
       }}
     >
@@ -97,7 +97,14 @@ export const Hawaii = (props: Generic): JSX.Element => {
           <div className="moveUp" style={{ marginTop: "1rem" }}>
             May 2018 - August 2018
           </div>
-          <ul style={{ overflow: "scroll" }} className="moveDown">
+          <ul
+            style={{
+              overflow: "scroll",
+              height: "14rem",
+              marginBottom: "1.5rem",
+            }}
+            className="moveDown"
+          >
             <li>
               Directed and motivated 4th and 5th grade students, organizing
               daily educational activities to achieve a productive summer
@@ -153,7 +160,12 @@ export const Hawaii = (props: Generic): JSX.Element => {
           {eatMe === 0 ? (
             <div
               className="thought movedDown"
-              style={{ position: "absolute", top: "1.5rem", left: "25rem" }}
+              style={{
+                position: "absolute",
+                top: "1.5rem",
+                left: "25rem",
+                zIndex: 10000,
+              }}
             >
               Hungry? Click on the spam masubi to eat it!
             </div>
