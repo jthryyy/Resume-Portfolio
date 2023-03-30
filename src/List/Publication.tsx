@@ -9,6 +9,7 @@ window.addEventListener("scroll", Reveal);
 export const Publication = (props: Generic): JSX.Element => {
   return (
     <div
+      id="pub"
       className="moveUp"
       style={{
         flexDirection: "column",
@@ -29,7 +30,11 @@ export const Publication = (props: Generic): JSX.Element => {
           <Back onClick={props.onClick} />
         </a>
       </div>
-      <div id="container" aria-label="book" className="container reveal">
+      <div
+        id="container"
+        aria-label="book"
+        className="container reveal moveDown"
+      >
         <div id="page-flip">
           <div id="r1">
             <div id="p1">

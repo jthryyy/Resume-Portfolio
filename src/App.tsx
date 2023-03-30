@@ -15,8 +15,12 @@ import { List } from "./List";
 function App() {
   const [menu, setMenu] = React.useState<boolean>(false);
   const [list, setList] = React.useState<boolean>(false);
+  const handleClick = (): void => {
+    setList(true);
+    setMenu(false);
+  };
   const props = {
-    onClick: () => setList(true),
+    onClick: handleClick,
   };
 
   const handleListClick = (): void => {
@@ -41,7 +45,7 @@ function App() {
         Jet Rader - Developer
       </div>
       <div className="Background">
-        {menu ? <QuestionMenu onClick={() => setList(true)} /> : null}
+        {menu ? <QuestionMenu onClick={handleClick} /> : null}
         <div
           style={{ position: "absolute", transform: "translate(890px, 200px)" }}
         >
