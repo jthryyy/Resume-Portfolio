@@ -54,12 +54,14 @@ export const QuestionMenu = (props: Generic): JSX.Element => {
           About me
         </a>
       </div>
-      <div
-        className="menuItems"
-        onClick={() => console.log("download resume")}
-        style={{ cursor: "pointer" }}
-      >
-        <div className="text">Resume</div>
+      <div className="menuItems" style={{ cursor: "pointer" }}>
+        <a
+          href="https://d3ancx11zq5pzk.cloudfront.net/JetRaderResume.pdf"
+          target="_blank"
+          className="text"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );

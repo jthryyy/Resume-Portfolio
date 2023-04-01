@@ -122,15 +122,20 @@ function App() {
             />
           </a>
         </div>
-        <div className="Objects" onClick={() => console.log("download resume")}>
-          <img
-            src={resume}
-            alt="Resume"
-            className="plz res"
-            style={{
-              position: "absolute",
-            }}
-          />
+        <div className="Objects">
+          <a
+            href="https://d3ancx11zq5pzk.cloudfront.net/JetRaderResume.pdf"
+            target="_blank"
+          >
+            <img
+              src={resume}
+              alt="Resume"
+              className="plz res"
+              style={{
+                position: "absolute",
+              }}
+            />
+          </a>
         </div>
         <div {...props} className="Objects">
           <a href="#bee">
