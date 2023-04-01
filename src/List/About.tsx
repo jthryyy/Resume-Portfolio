@@ -41,6 +41,7 @@ export const About = (props: Generic): JSX.Element => {
           className="moveLeft"
           target="_blank"
           aria-label="InstaLink"
+          rel="noreferrer"
         >
           <div className="socialMed">
             <Insta />
@@ -51,6 +52,7 @@ export const About = (props: Generic): JSX.Element => {
           className="moveLeft"
           aria-label="LinkedInLink"
           target="_blank"
+          rel="noreferrer"
         >
           <div className="socialMed">
             <LinkedIn />
@@ -61,6 +63,7 @@ export const About = (props: Generic): JSX.Element => {
           className="moveLeft"
           aria-label="GithubLink"
           target="_blank"
+          rel="noreferrer"
         >
           <div className="socialMed">
             <Github />

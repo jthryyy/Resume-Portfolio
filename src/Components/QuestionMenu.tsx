@@ -59,6 +59,7 @@ export const QuestionMenu = (props: Generic): JSX.Element => {
           href="https://d3ancx11zq5pzk.cloudfront.net/JetRaderResume.pdf"
           target="_blank"
           className="text"
+          rel="noreferrer"
         >
           Resume
         </a>

@@ -126,6 +126,7 @@ function App() {
           <a
             href="https://d3ancx11zq5pzk.cloudfront.net/JetRaderResume.pdf"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src={resume}
