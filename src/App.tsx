@@ -37,18 +37,16 @@ function App() {
       }}
     >
       <div
+        className="name"
         style={{
           position: "absolute",
-          transform: "translate(-200px, 120px) rotate(-30deg)",
         }}
       >
         Jet Rader - Developer
       </div>
-      <div className="Background">
+      <div className="Background" style={{ marginTop: "1.5rem" }}>
         {menu ? <QuestionMenu onClick={handleClick} /> : null}
-        <div
-          style={{ position: "absolute", transform: "translate(890px, 200px)" }}
-        >
+        <div className="QuestionBack" style={{ position: "absolute" }}>
           <Question onClick={() => setMenu(menu ? false : true)} />
         </div>
         <div {...props} className="Objects" aria-label="AboutMe">
@@ -56,12 +54,9 @@ function App() {
             <img
               alt="Portrait"
               src={portrait}
-              className="plz"
+              className="plz Portrait"
               style={{
                 position: "absolute",
-                transform: "translate(100px, 296px)",
-                width: "10rem",
-                height: "13rem",
               }}
             />
           </a>
@@ -71,13 +66,10 @@ function App() {
           <a href="#sw">
             <img
               alt="Labtop"
-              className="plz"
+              className="plz Laptop"
               src={laptop}
               style={{
                 position: "absolute",
-                transform: "translate(645px, 456px)",
-                width: "8rem",
-                height: "8rem",
               }}
             />
           </a>
@@ -86,13 +78,10 @@ function App() {
           <a href="#hawaii">
             <img
               alt="Spam masubi"
-              className="plz"
+              className="plz spam"
               src={spam}
               style={{
                 position: "absolute",
-                transform: "translate(650px, 456px) rotate(-5deg)",
-                width: "2.8rem",
-                height: "2.8rem",
               }}
             />
           </a>
@@ -101,13 +90,10 @@ function App() {
           <a href="#pub">
             <img
               alt="Book"
-              className="plz"
+              className="plz book"
               src={book}
               style={{
                 position: "absolute",
-                transform: "translate(200px, 456px)",
-                width: "5rem",
-                height: "5rem",
               }}
             />
           </a>
@@ -116,13 +102,10 @@ function App() {
           <a href="#science">
             <img
               alt="Test tubes"
-              className="plz"
+              className="plz science"
               src={science}
               style={{
                 position: "absolute",
-                transform: "translate(368px, 250px)",
-                width: "5rem",
-                height: "5rem",
               }}
             />
           </a>
@@ -131,13 +114,10 @@ function App() {
           <a href="#education">
             <img
               alt="Diploma"
-              className="plz"
+              className="plz diploma"
               src={cert}
               style={{
                 position: "absolute",
-                transform: "translate(540px, 240px) rotate(1deg)",
-                width: "5.8rem",
-                height: "5.8rem",
               }}
             />
           </a>
@@ -146,12 +126,9 @@ function App() {
           <img
             src={resume}
             alt="Resume"
-            className="plz"
+            className="plz res"
             style={{
               position: "absolute",
-              transform: "translate(310px, 536px) rotate(2deg)",
-              width: "2.5rem",
-              height: "2.5rem",
             }}
           />
         </div>
@@ -159,13 +136,10 @@ function App() {
           <a href="#bee">
             <img
               alt="Bee"
-              className="plz"
+              className="plz b"
               src={bee}
               style={{
                 position: "absolute",
-                transform: "translate(730px, 356px)",
-                width: "2.7rem",
-                height: "2.7rem",
               }}
             />
           </a>

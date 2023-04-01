@@ -5,68 +5,71 @@ import type { Generic } from "../types";
 
 export const About = (props: Generic): JSX.Element => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div
+      className="moveUp"
+      style={{
+        backgroundColor: "#679A99",
+        height: "15%",
+        marginTop: "1.5rem",
+        borderRadius: "3rem 3rem 0rem 0rem",
+        boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
+        fontSize: "1.6rem",
+        color: "black",
+        padding: "2rem",
+        display: "flex",
+        width: "100%",
+        cursor: "default",
+      }}
+    >
       <div
-        className="moveUp"
         style={{
-          backgroundColor: "#679A99",
-          height: "15%",
-          marginTop: "1.5rem",
-          borderRadius: "3rem 3rem 0rem 0rem",
-          boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-          fontSize: "1.6rem",
-          color: "black",
-          padding: "2rem",
           display: "flex",
-          width: "100%",
-          cursor: "default",
+          flexDirection: "column",
+          justifyContent: "center",
         }}
       >
         <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
+          style={{ marginLeft: "1.2rem", marginBottom: "0.8rem" }}
+          className="moveLeft"
         >
-          <div
-            style={{ marginLeft: "1.2rem", marginBottom: "0.8rem" }}
-            className="moveLeft"
-          >
-            <a href="#home">
-              <Back onClick={props.onClick} />
-            </a>
-          </div>
-          <a
-            href="https://www.instagram.com/hopiathefloof/"
-            className="moveLeft"
-            aria-label="InstaLink"
-          >
-            <div className="socialMed">
-              <Insta />
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jethary-rader-5ab428153/"
-            className="moveLeft"
-            aria-label="LinkedInLink"
-          >
-            <div className="socialMed">
-              <LinkedIn />
-            </div>
-          </a>
-          <a
-            href="https://github.com/jthryyy"
-            className="moveLeft"
-            aria-label="GithubLink"
-          >
-            <div className="socialMed">
-              <Github />
-            </div>
+          <a href="#home">
+            <Back onClick={props.onClick} />
           </a>
         </div>
+        <a
+          href="https://www.instagram.com/hopiathefloof/"
+          className="moveLeft"
+          aria-label="InstaLink"
+        >
+          <div className="socialMed">
+            <Insta />
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jethary-rader-5ab428153/"
+          className="moveLeft"
+          aria-label="LinkedInLink"
+        >
+          <div className="socialMed">
+            <LinkedIn />
+          </div>
+        </a>
+        <a
+          href="https://github.com/jthryyy"
+          className="moveLeft"
+          aria-label="GithubLink"
+        >
+          <div className="socialMed">
+            <Github />
+          </div>
+        </a>
+      </div>
+      <div className="about" style={{ display: "flex" }}>
         <div
-          style={{ margin: "0 2rem", alignSelf: "center" }}
+          style={{
+            margin: "0 2rem",
+            alignSelf: "center",
+          }}
           className="moveDown"
         >
           <img

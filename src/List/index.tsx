@@ -33,7 +33,6 @@ export const List = (props: Generic): JSX.Element => {
       <div id="bee" style={oneHundredPercent}>
         <Bee onClick={props.onClick} />
       </div>
-
       <div id="hawaii" style={oneHundredPercent}>
         <Hawaii onClick={props.onClick} />
       </div>
@@ -45,7 +44,10 @@ export const List = (props: Generic): JSX.Element => {
           <Cert />
         </div>
       </div>
-      <div id="AboutMe">
+      <div
+        id="AboutMe"
+        style={{ width: "100%", display: "flex", justifyContent: "center" }}
+      >
         <About onClick={props.onClick} />
       </div>
     </div>

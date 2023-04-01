@@ -7,6 +7,7 @@ export const QuestionMenu = (props: Generic): JSX.Element => {
   };
   return (
     <div
+      className="m"
       style={{
         whiteSpace: "nowrap",
         zIndex: 10,
@@ -16,7 +17,6 @@ export const QuestionMenu = (props: Generic): JSX.Element => {
         backgroundColor: "white",
         flexDirection: "row",
         border: "3px solid #679A99",
-        transform: "translate(750px, 230px)",
       }}
     >
       <div {...items} aria-label="opentronsSw">

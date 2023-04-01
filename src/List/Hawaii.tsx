@@ -15,8 +15,9 @@ import { Reveal } from "../Utils/Reveal";
 import type { Generic } from "../types";
 
 window.addEventListener("scroll", Reveal);
-
 export const Hawaii = (props: Generic): JSX.Element => {
+  const containerWidth = window.innerWidth;
+
   const [eatMe, setEatMe] = React.useState<number>(0);
   let src: string = spam;
   if (eatMe === 1) {
@@ -38,11 +39,10 @@ export const Hawaii = (props: Generic): JSX.Element => {
   }
   return (
     <div
-      className="moveUp"
+      className="moveUp hawaiiContainer"
       style={{
         flexDirection: "row",
         backgroundColor: "#A89BC6",
-        height: "25rem",
         margin: "1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
@@ -53,10 +53,9 @@ export const Hawaii = (props: Generic): JSX.Element => {
       }}
     >
       <div
-        className="container reveal"
+        className="container reveal hawaii"
         style={{
           padding: "2rem",
-          flexDirection: "row",
           display: "flex",
           gridGap: "1rem",
           zIndex: 100,
@@ -112,25 +111,26 @@ export const Hawaii = (props: Generic): JSX.Element => {
           </ul>
         </div>
         <div>
-          <div style={{ position: "relative" }}>
-            <img
-              alt="background"
-              src={background}
-              width="500"
-              height="300"
-              style={{
-                borderRadius: "3rem",
-                boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
-              }}
-            />
+          <div style={{ position: "relative", width: "60%" }}>
+            {containerWidth === 400 || containerWidth < 400 ? null : (
+              <img
+                alt="background"
+                src={background}
+                height="300"
+                style={{
+                  overflow: "hidden",
+                  borderRadius: "3rem",
+                  boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
+                }}
+              />
+            )}
           </div>
           <div
             aria-label={`spamContainer_${eatMe}`}
-            className="moveDown"
+            className="moveDown spamCont"
             onClick={() => setEatMe(eatMe === 8 ? 0 : eatMe + 1)}
             style={{
               position: "absolute",
-              top: "-4rem",
               zIndex: 100,
               cursor: eatMe === 8 ? "default" : "pointer",
             }}
@@ -138,7 +138,7 @@ export const Hawaii = (props: Generic): JSX.Element => {
             <img
               src={src}
               alt={`Spam Masubi_${eatMe}`}
-              width="500"
+              width="100%"
               height="500"
             />
           </div>
@@ -147,23 +147,19 @@ export const Hawaii = (props: Generic): JSX.Element => {
               style={{
                 cursor: "pointer",
                 position: "absolute",
-                top: "1.5rem",
-                left: "25rem",
                 zIndex: 10000,
               }}
               onClick={() => setEatMe(0)}
-              className="thought moveUp"
+              className="thought moveUp hungry"
             >
               Still hungry? Eat again!
             </div>
           ) : null}
           {eatMe === 0 ? (
             <div
-              className="thought movedDown"
+              className="thought movedDown hungry"
               style={{
                 position: "absolute",
-                top: "1.5rem",
-                left: "25rem",
                 zIndex: 10000,
               }}
             >

@@ -10,7 +10,7 @@ export const Publication = (props: Generic): JSX.Element => {
   return (
     <div
       id="pub"
-      className="moveUp"
+      className="moveUp pubContainer"
       style={{
         flexDirection: "column",
         backgroundColor: "#EFAA94",
@@ -20,7 +20,6 @@ export const Publication = (props: Generic): JSX.Element => {
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.6rem",
         color: "black",
-        width: "44rem",
         display: "flex",
         alignItems: "center",
       }}

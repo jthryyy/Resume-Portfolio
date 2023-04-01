@@ -8,12 +8,10 @@ window.addEventListener("scroll", Reveal);
 export const Bee = (props: Generic): JSX.Element => {
   return (
     <div
-      className="moveUp"
+      className="moveUp beeBack"
       style={{
         flexDirection: "column",
         backgroundColor: "#6C97C4",
-        height: "28rem",
-        margin: "1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",
@@ -46,9 +44,8 @@ export const Bee = (props: Generic): JSX.Element => {
         >
           <div className="moveUp">Lab Technician, Princeton University</div>
           <div
-            className="moveDown"
+            className="moveDown location"
             style={{
-              flexDirection: "row",
               width: "15rem",
               display: "flex",
               backgroundColor: "lightgray",

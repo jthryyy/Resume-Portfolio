@@ -141,8 +141,6 @@ export const OpentronsSw = (props: Generic): JSX.Element => {
           backgroundColor: "black",
           position: "absolute",
           color: "white",
-          height: "19rem",
-          width: "29.2rem",
         }}
       >
         {setting}

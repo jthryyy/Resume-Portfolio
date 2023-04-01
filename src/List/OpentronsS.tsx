@@ -14,10 +14,9 @@ export const OpentronsS = (props: Generic): JSX.Element => {
 
   return (
     <div
-      className="moveUp"
+      className="moveUp osContainer"
       style={{
         backgroundColor: "#f1d7d8",
-        height: "26rem",
         margin: "1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
@@ -28,10 +27,9 @@ export const OpentronsS = (props: Generic): JSX.Element => {
       }}
     >
       <div
-        className="container reveal"
+        className="container reveal osOrganize"
         style={{
           padding: "2rem",
-          flexDirection: "row",
           display: "flex",
           gridGap: "1rem",
           zIndex: 100,
@@ -55,9 +53,8 @@ export const OpentronsS = (props: Generic): JSX.Element => {
             Senior Researcher and Research Tech, Opentrons Labworks
           </div>
           <div
-            className="moveDown"
+            className="moveDown location"
             style={{
-              flexDirection: "row",
               width: "16rem",
               display: "flex",
               backgroundColor: "lightgray",

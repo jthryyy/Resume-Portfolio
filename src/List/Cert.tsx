@@ -6,12 +6,11 @@ window.addEventListener("scroll", Reveal);
 export const Cert = (): JSX.Element => {
   return (
     <div
-      className="moveDown"
+      className="moveDown certContainer"
       style={{
         flexDirection: "column",
         backgroundColor: "#f7d391",
         height: "24rem",
-        margin: "2.5rem 2.5rem 0.5rem 1.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.2rem",

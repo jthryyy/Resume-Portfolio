@@ -6,13 +6,309 @@
   justify-content: center;
 }
 
-.Background {
-  background-image: url("./Images/bedroomfinal.jpeg");
-  height: 1000px;
-  width: 1000px;
-  background-size: 1000px, 1000px;
+@media screen and (min-width: 1010px) {
+  .Background {
+    background-image: url("./Images/bedroomfinal.jpeg");
+    height: 1000px;
+    width: 1000px;
+    background-size: 100%;
+  }
+  .QuestionBack {
+    transform: translate(890px, 200px);
+  }
+  .Portrait {
+    transform: translate(100px, 296px);
+    width: 10rem;
+    height: 13rem;
+  }
+  .Laptop {
+    transform: translate(645px, 456px);
+    width: 8rem;
+    height: 8rem;
+  }
+  .name {
+    padding-top: 1.5rem;
+  }
+  .spam {
+    transform: translate(650px, 456px) rotate(-5deg);
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .book {
+    transform: translate(200px, 456px);
+    width: 5rem;
+    height: 5rem;
+  }
+  .science {
+    transform: translate(368px, 250px);
+    width: 5rem;
+    height: 5rem;
+  }
+  .diploma {
+    transform: translate(540px, 240px) rotate(1deg);
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+  .res {
+    transform: translate(310px, 536px) rotate(2deg);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .b {
+    transform: translate(730px, 356px);
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .m {
+    transform: translate(750px, 230px);
+  }
 }
-
+@media screen and (max-width: 1009px) and (min-width: 824px) {
+  .Background {
+    background-image: url("./Images/bedroomfinal.jpeg");
+    height: 900px;
+    width: 900px;
+    background-size: 100%;
+  }
+  .QuestionBack {
+    transform: translate(780px, 200px);
+  }
+  .Portrait {
+    transform: translate(100px, 261px);
+    width: 8.5rem;
+    height: 11.5rem;
+  }
+  .Laptop {
+    transform: translate(560px, 390px);
+    width: 7rem;
+    height: 7rem;
+  }
+  .name {
+    padding-top: 1.5rem;
+  }
+  .spam {
+    transform: translate(560px, 400px) rotate(-5deg);
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .book {
+    transform: translate(200px, 406px);
+    width: 4rem;
+    height: 4rem;
+  }
+  .science {
+    transform: translate(328px, 220px);
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .diploma {
+    transform: translate(490px, 220px) rotate(1deg);
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .res {
+    transform: translate(270px, 480px) rotate(2deg);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .b {
+    transform: translate(650px, 306px);
+    width: 2rem;
+    height: 2rem;
+  }
+  .m {
+    transform: translate(630px, 230px);
+  }
+}
+@media screen and (max-width: 823px) and (min-width: 700px) {
+  .Background {
+    background-image: url("./Images/bedroomfinal.jpeg");
+    height: 750px;
+    width: 750px;
+    background-size: 100%;
+  }
+  .QuestionBack {
+    transform: translate(660px, 170px);
+  }
+  .Portrait {
+    transform: translate(80px, 200px);
+    width: 7.5rem;
+    height: 10.5rem;
+  }
+  .Laptop {
+    transform: translate(480px, 340px);
+    width: 6rem;
+    height: 6rem;
+  }
+  .name {
+    padding-top: 1.5rem;
+  }
+  .spam {
+    transform: translate(480px, 350px) rotate(-5deg);
+    width: 2rem;
+    height: 2rem;
+  }
+  .book {
+    transform: translate(150px, 346px);
+    width: 3rem;
+    height: 3rem;
+  }
+  .science {
+    transform: translate(260px, 180px);
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .diploma {
+    transform: translate(410px, 180px) rotate(1deg);
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .res {
+    transform: translate(220px, 400px) rotate(2deg);
+    width: 2rem;
+    height: 2rem;
+  }
+  .b {
+    transform: translate(535px, 256px);
+    width: 2rem;
+    height: 2rem;
+  }
+  .m {
+    transform: translate(520px, 200px);
+  }
+}
+@media screen and (max-width: 699px) and (min-width: 500px) {
+  .Background {
+    background-image: url("./Images/bedroomfinal.jpeg");
+    height: 550px;
+    width: 550px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .QuestionBack {
+    transform: translate(440px, 100px);
+  }
+  .Portrait {
+    transform: translate(57px, 140px);
+    width: 5.5rem;
+    height: 8.5rem;
+  }
+  .Laptop {
+    transform: translate(340px, 230px);
+    width: 5rem;
+    height: 5rem;
+  }
+  .name {
+    padding-top: 1.5rem;
+  }
+  .spam {
+    transform: translate(345px, 240px) rotate(-5deg);
+    width: 2rem;
+    height: 2rem;
+  }
+  .book {
+    transform: translate(110px, 260px);
+    width: 2rem;
+    height: 2rem;
+  }
+  .science {
+    transform: translate(200px, 140px);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .diploma {
+    transform: translate(290px, 130px) rotate(1deg);
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .res {
+    transform: translate(170px, 290px) rotate(2deg);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .b {
+    transform: translate(390px, 186px);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .m {
+    transform: translate(330px, 150px);
+  }
+}
+@media screen and (max-width: 499px) {
+  .Background {
+    background-image: url("./Images/bedroomfinal.jpeg");
+    height: 400px;
+    width: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .QuestionBack {
+    right: 1.5rem;
+  }
+  .Portrait {
+    transform: translate(40px, 100px);
+    width: 4rem;
+    height: 7rem;
+  }
+  .Laptop {
+    transform: translate(250px, 170px);
+    width: 4rem;
+    height: 4rem;
+  }
+  .name {
+    left: -12rem;
+    transform: translate(205px, 50px) rotate(-29deg);
+  }
+  .spam {
+    transform: translate(255px, 180px) rotate(-5deg);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .book {
+    transform: translate(80px, 190px);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .science {
+    transform: translate(150px, 105px);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .diploma {
+    transform: translate(205px, 90px) rotate(1deg);
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .res {
+    transform: translate(120px, 220px) rotate(2deg);
+    width: 1rem;
+    height: 1rem;
+  }
+  .b {
+    transform: translate(290px, 136px);
+    width: 1rem;
+    height: 1rem;
+  }
+  .m {
+    transform: translate(200px, 30px);
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .swBackground {
+    left: 6.2rem;
+    top: 2rem;
+    height: 26rem;
+    width: 12rem;
+    overflow: scroll;
+  }
+  .osw {
+    background-image: url("./Images/laptop.jpeg");
+    background-size: 1500px;
+  }
+}
 .Objects {
   cursor: pointer;
   animation: wiggle 2s infinite;
@@ -90,23 +386,6 @@
 .wrap {
   position: relative;
 }
-@keyframes dodging1 {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 20px;
-  }
-  100% {
-    top: 0;
-  }
-}
-.wrap2 {
-  position: absolute;
-  left: 43%;
-  margin-top: -100px;
-  animation: dodging1 1s ease-in-out infinite;
-}
 .body {
   position: absolute;
   top: 250px;
@@ -118,22 +397,6 @@
   background-color: #f7d391;
   box-shadow: 20px 0 0 #000, 40px -3px 0 #f7d391, 60px -7px 0 #000,
     80px -11px 0 #f7d391;
-}
-@keyframes flutter2 {
-  0% {
-    transform: rotate(80deg);
-  }
-  50% {
-    transform: rotate(100deg);
-  }
-}
-@keyframes flutter1 {
-  0% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(40deg);
-  }
 }
 .wing1 {
   position: absolute;
@@ -204,7 +467,40 @@
   box-shadow: 20px 0 0 #000;
   z-index: 3;
 }
+@keyframes dodging1 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.wrap2 {
+  position: absolute;
+  left: 43%;
+  margin-top: -100px;
+  animation: dodging1 1s ease-in-out infinite;
+}
 
+@keyframes flutter2 {
+  0% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+}
+@keyframes flutter1 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}
 .cloud2 {
   position: absolute;
   height: 60px;
@@ -293,17 +589,19 @@
   transform: translateX(-5px);
 }
 
-.osw {
-  background-image: url("./Images/laptop.jpeg");
-  background-size: 1050px;
+@media screen and (min-width: 821px) {
+  .osw {
+    background-image: url("./Images/laptop.jpeg");
+    background-size: 1050px;
+  }
+  .swBackground {
+    left: 18.2rem;
+    top: 5.5rem;
+    height: 19rem;
+    width: 29.2rem;
+  }
 }
-
-.swBackground {
-  left: 18.2rem;
-  top: 5.5rem;
-}
-
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) and (min-width: 500px) {
   .osw {
     background-image: url("./Images/laptop.jpeg");
     background-size: 1050px;
@@ -312,12 +610,8 @@
   .swBackground {
     left: 9.2rem;
     top: 0.8rem;
-  }
-  .Background {
-    background-image: url("./Images/bedroomfinal.jpeg");
-    height: 880px;
-    width: 880px;
-    background-size: 880px, 880px;
+    height: 19rem;
+    width: 29.2rem;
   }
 }
 
@@ -370,18 +664,20 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.ListLayout {
-  display: flex;
-  flex-direction: row;
-}
-.PublicationWidth {
-  width: 65%;
-}
-.CertWidth {
-  width: 35%;
+@media screen and (min-width: 1094px) {
+  .ListLayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .PublicationWidth {
+    width: 65%;
+  }
+  .CertWidth {
+    width: 35%;
+  }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1093px) {
   .ListLayout {
     display: flex;
     flex-direction: column;
@@ -392,5 +688,123 @@
   }
   .CertWidth {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ListLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .CertWidth {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 801px) {
+  .osOrganize {
+    flex-direction: row;
+  }
+  .osContainer {
+    height: 26rem;
+  }
+  .location {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 800px) {
+  .osOrganize {
+    flex-direction: column;
+    align-items: center;
+  }
+  .osContainer {
+    height: 55rem;
+  }
+  .location {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .osOrganize {
+    flex-direction: column;
+    align-items: start;
+  }
+  .osContainer {
+    height: 58rem;
+  }
+}
+
+@media screen and (min-width: 729px) {
+  .pubContainer {
+    width: 44rem;
+    width: 1.5rem 1.5rem 1.5rem 2.5rem;
+  }
+  .certContainer {
+    margin: 2.5rem 2.5rem 0.5rem 1.5rem;
+    width: 21rem;
+  }
+  .wrap2 {
+    position: absolute;
+    left: 43%;
+    margin-top: -100px;
+    animation: dodging1 1s ease-in-out infinite;
+  }
+  .beeBack {
+    height: 28rem;
+    margin: 1.5rem 2.5rem;
+  }
+  .hawaii {
+    flex-direction: row;
+  }
+  .hawaiiContainer {
+    height: 25rem;
+  }
+  .spamCont {
+    top: -4rem;
+  }
+  .hungry {
+    top: 1.5rem;
+    left: 25rem;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .pubContainer {
+    width: 100%;
+    margin: 0rem;
+  }
+  .certContainer {
+    margin: 1.5rem 2.5rem;
+    width: 100%;
+  }
+  .CertWidth {
+    width: 100%;
+  }
+  .wrap2 {
+    position: absolute;
+    left: -26%;
+    margin-top: 120px;
+    animation: dodging1 1s ease-in-out infinite;
+  }
+  .beeBack {
+    height: 34rem;
+    margin: 1.5rem 0.5rem;
+    padding: 1rem;
+  }
+  .hawaii {
+    flex-direction: column;
+  }
+  .hawaiiContainer {
+    height: 52rem;
+  }
+  .spamCont {
+    top: 25rem;
+    left: -6rem;
+  }
+  .hungry {
+    left: 1rem;
+    top: 23rem;
   }
 }
