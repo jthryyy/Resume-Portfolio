@@ -15,7 +15,6 @@ export const Publication = (props: Generic): JSX.Element => {
         flexDirection: "column",
         backgroundColor: "#EFAA94",
         height: "33rem",
-        margin: "1.5rem 1.5rem 1.5rem 2.5rem",
         borderRadius: "3rem",
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.2)",
         fontSize: "1.6rem",
